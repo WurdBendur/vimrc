@@ -19,6 +19,7 @@ set formatoptions+=l			" Black magic
 call plug#begin('~/.vim/plugged')
 	" ## Themes
 	Plug 'https://github.com/chriskempson/vim-tomorrow-theme'
+	Plug 'vim-airline/vim-airline-themes'
 
 	" ## Markdown
 	Plug 'nelstrom/vim-markdown-folding'
