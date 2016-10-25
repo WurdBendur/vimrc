@@ -6,7 +6,7 @@ set hidden						" Allow hidden buffers
 filetype plugin indent on		" Enable file type detection and do language-dependent indenting.
 set history=100					" Default = 8
 nnoremap ; :
-set tabstop=4
+set tabstop=4					" Default tabs are too big
 set wrap						" Turn on word wrapping
 set linebreak					" Only wrap at sensible places
 set nolist						" list disables linebreak
@@ -35,7 +35,7 @@ call plug#end()
 " # Plugin Settings
 set laststatus=2		" Make airline status bar appear all the time
 set foldenable			" Enable markdown folding
-
+let g:airline#extensions#wordcount#enabled = 1	"Show word count
 " Get rid of pointless Airline separators because I don't want to install a
 " patched font to make them look right
 let g:airline_left_sep=''
