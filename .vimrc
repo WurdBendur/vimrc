@@ -41,6 +41,12 @@ let g:airline#extensions#wordcount#enabled = 1	"Show word count
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 
+" Remove existing autocommands to avoid duplicates
+:autocmd!
+"Force Airline to refresh after setup so settings work
+:autocmd VimEnter * :AirlineRefresh
+
+
 " # Color Scheme
 syntax on
 syntax enable			" I have no idea what this actually does
